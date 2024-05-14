@@ -1,0 +1,362 @@
+@keyframes autoGolangHover {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid rgba(0, 125, 156, 0.75);
+    transform: scale(1.5);
+    color: rgba(0, 125, 156, 0.75);
+  }
+}
+
+@keyframes autoGolangColor {
+  0%,
+  100% {
+    color: white;
+  }
+  25%,
+  75% {
+    color: rgba(0, 125, 156, 0.75);
+  }
+}
+.auto-golang {
+  animation: autoGolangHover 1.4s ease-in-out forwards;
+}
+.auto-golang-color {
+  animation: autoGolangColor 1.4s ease-in-out forwards;
+}
+@keyframes autoReactHover {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #01cdff;
+    transform: scale(1.5);
+    color: #01cdff;
+  }
+}
+@keyframes autoReactColor {
+  0%,
+  100% {
+    
+    color: white;
+  }
+  25%,
+  75% {
+    color: #01cdff;
+  }
+}
+.auto-react-color {
+  animation: autoReactColor 1.4s ease-in-out forwards;
+}
+.auto-react {
+  animation: autoReactHover 1.4s ease-in-out forwards;
+}
+@keyframes autoExpressHover {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #f7df1e;
+    transform: scale(1.5);
+    color: #f7df1e;
+  }
+}
+@keyframes autoExpressColor {
+  0%,
+  100% {
+    color: white;
+  }
+  25%,
+  75% {
+    color: #f7df1e;
+  }
+}
+.auto-express-color {
+  animation: autoExpressColor 1.4s ease-in-out forwards;
+}
+.auto-express {
+  animation: autoExpressHover 1.4s ease-in-out forwards;
+}
+@keyframes autoMongoDB {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #439934;
+    transform: scale(1.5);
+    color: #439934;
+  }
+}
+@keyframes autoMongodbColor {
+  0%,
+  100% {
+    color: white;
+  }
+  25%,
+  75% {
+    color: #439934;
+  }
+}
+.auto-mongodb-color {
+  animation: autoMongodbColor 1.4s ease-in-out forwards;
+}
+.auto-mongodb {
+  animation: autoMongoDB 1.4s ease-in-out forwards;
+}
+
+@keyframes autoNode {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #82cd2a;
+    transform: scale(1.5);
+    color: #82cd2a;
+  }
+}
+@keyframes autoNodeColor {
+  0%,
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+  25%,
+  75% {
+    color: #82cd2a;
+  }
+}
+.auto-node-color {
+  animation: autoNodeColor 1.4s ease-in-out forwards;
+}
+.auto-node {
+  animation: autoNode 1.4s ease-in-out forwards;
+}
+
+@keyframes autoBootstrap {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #722ef9;
+    transform: scale(1.5);
+    color: #722ef9;
+  }
+}
+@keyframes autoBootstrapColor {
+  0%,
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+  25%,
+  75% {
+    color: #722ef9;
+  }
+}
+.auto-bootstrap-color {
+  animation: autoBootstrapColor 1.4s ease-in-out forwards;
+}
+.auto-bootstrap {
+  animation: autoBootstrap 1.4s ease-in-out forwards;
+}
+@keyframes autoGit {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    border: 2px solid #f44d27;
+    transform: scale(1.5);
+    color: #f44d27;
+  }
+}
+@keyframes autoGitColor {
+  0%,
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+  25%,
+  75% {
+    color: #f44d27;
+  }
+}
+.auto-git-color {
+  animation: autoGitColor 1.4s ease-in-out forwards;
+}
+.auto-git {
+  animation: autoGit 1.4s ease-in-out forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-skill {
+  animation: slideInFromLeft 1.4s ease-in-out forwards;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 4rem 0 2rem 0;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.icon {
+  flex-basis: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.icon h4 {
+  margin-top: 2rem;
+  flex-basis: 0 0 100%;
+}
+
+.icons {
+  color: white;
+  padding: 5px;
+  /* margin-right: 1rem; */
+}
+.skill-icon {
+  /* display: flex;
+  flex-direction: column; */
+  transition: all 0.3s;
+  flex-basis: 0 0 100%;
+  flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-icon:hover {
+  transform: scale(1.5);
+}
+
+.skill-icon:hover > #skillgolang {
+  color: rgba(0, 125, 156, 0.75);
+}
+
+.skill-icon:has(#skillgolang):hover {
+  border: 2px solid rgba(0, 125, 156, 0.75);
+  border-radius: 50%;
+}
+.skill-icon:hover + #gotext {
+  color: rgba(0, 125, 156, 0.75);
+}
+
+.skill-icon:hover > #skillreact {
+  color: #01cdff;
+}
+.skill-icon:hover + #goreact {
+  color: #01cdff;
+}
+.skill-icon:has(#skillreact):hover {
+  border: 2px solid #01cdff;
+  border-radius: 50%;
+}
+.skill-icon:hover > #skillexpress {
+  color: #f7df1e;
+}
+.skill-icon:hover + #goexpress {
+  color: #f7df1e;
+}
+.skill-icon:has(#skillexpress):hover {
+  border: 2px solid #f7df1e;
+  border-radius: 50%;
+}
+.skill-icon:hover > #skillmongodb {
+  color: #439934;
+}
+.skill-icon:hover + #gomongodb {
+  color: #439934;
+}
+.skill-icon:has(#skillmongodb):hover {
+  border: 2px solid #439934;
+  border-radius: 50%;
+}
+.skill-icon:hover > #skillnodejs {
+  color: #82cd2a;
+}
+.skill-icon:hover + #gonodejs {
+  color: #82cd2a;
+}
+.skill-icon:has(#skillnodejs):hover {
+  border: 2px solid #82cd2a;
+  border-radius: 50%;
+}
+
+.skill-icon:hover > #skillbootstrap {
+  color: #722ef9;
+}
+.skill-icon:hover + #gobootstrap {
+  color: #722ef9;
+}
+.skill-icon:has(#skillbootstrap):hover {
+  border: 2px solid #722ef9;
+  border-radius: 50%;
+}
+
+.skill-icon:hover > #skillgit {
+  color: #f44d27;
+}
+.skill-icon:hover + #gogit {
+  color: #f44d27;
+}
+.skill-icon:has(#skillgit):hover {
+  border: 2px solid #f44d27;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .icon-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .icon {
+    align-items: center;
+    width: 50%;
+    margin: 1.5rem 0;
+  }
+  .icon h4 {
+    /* flex-basis: 0 0 50%; */
+    margin-top: 1rem;
+    width: 50%;
+  }
+}

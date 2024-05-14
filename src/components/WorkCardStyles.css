@@ -1,0 +1,83 @@
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .slide-in-project {
+    animation: slideInFromLeft 1.5s ease-in-out forwards;
+  }
+.project-heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+
+}
+
+.project-container{
+    max-width: 1140px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+    /* padding-bottom:  5rem; */
+}
+
+.project-card{
+    background: #1a1919;
+    position: relative ;
+    margin: 3rem 0;
+    padding: 1.2rem 1rem ;
+}
+.project-title{
+    color: white;
+    padding: 1rem 0;
+}
+.pro-details{
+   
+    padding: 2px 2px;
+    margin-bottom: 2rem;
+}
+.pro-details p {
+    padding-bottom: 1rem;
+    font-size:1.1rem;
+    text-align: justify;
+}
+.pro-details ul  {
+    color: white;
+    margin: 5px 5px;
+    list-style-type: disc;
+}
+.pro-details li {
+ 
+    color: white;
+    padding-bottom: 1rem;
+    font-size:1.1rem;
+    text-align: justify;
+}
+
+.pro-btns{
+    width: 90% ;
+    position: absolute;
+    bottom : 0;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem 0;
+}
+
+.pro-btns .btn{
+padding:0.5rem 1rem;
+}
+
+@media screen and (max-width:740px) {
+    .project-container{
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+  
+}
