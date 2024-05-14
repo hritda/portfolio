@@ -24,7 +24,7 @@ const Navbar = (props) => {
     return (
         <div className={color ? "header header-bg" : "header"}>
             <Link to="/">
-                <h1>Portfolio</h1>
+            <img src={require('../assets/whitehrithiklogo.svg').default} width="50" height="50" alt='mySvgImage' />
             </Link>
             <ul className={click ? ("nav-menu active") : ("nav-menu")}>
                
