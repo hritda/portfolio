@@ -35,7 +35,24 @@
     padding: 1rem;
 }
 .social{
-margin-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+#linkedin{
+    color:white;
+    margin:1rem;
+}
+#github{
+    color:white;
+    margin:1rem;
+}
+#github:hover{
+    cursor:pointer;
+}
+#linkedin:hover{
+    color:#0a66c2;
+    cursor:pointer;
 }
 
 h4{

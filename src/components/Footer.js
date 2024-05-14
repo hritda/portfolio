@@ -27,8 +27,8 @@ const Footer = () => {
             in software development.
           </p>
           <div className="social">
-           <div id="github"> <a> < FaGithub size={25} style={{ color: "white", marginRight: "1rem" }} /></a></div>
-            <div id="linkedin"><a>< FaLinkedin size={25} style={{ color: "#0077B5", marginRight: "2rem" }} /></a></div>
+           <div > <a id="github"> < FaGithub size={25}  /></a></div>
+            <div ><a id="linkedin">< FaLinkedin size={25} /></a></div>
           </div>
         </div>
       </div>
