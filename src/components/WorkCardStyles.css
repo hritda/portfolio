@@ -70,7 +70,9 @@
 }
 
 .pro-btns .btn{
-padding:0.5rem 1rem;
+    padding:12px 32px;
+    border: 1px solid white;
+    color: white;
 }
 
 @media screen and (max-width:740px) {

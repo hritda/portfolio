@@ -18,7 +18,7 @@ const HeroImg2 = (props) => {
           ]}
           preRenderFirstString={true}
           wrapper="span"
-          style={{ fontSize: '6rem', color: 'white', display: 'inline-block',backgroundColor:"#f2f2f233", paddingRight:'2%'}}
+          style={{ fontSize: '6rem', color: 'white', display: 'inline-block',backgroundColor:"#f2f2f233", paddingRight:'2%',paddingLeft:"2%"}}
           speed={40}
           repeat={Infinity}
           
