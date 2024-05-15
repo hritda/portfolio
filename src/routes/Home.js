@@ -8,8 +8,9 @@ import AboutContent from '../components/AboutContent';
 import Form from '../components/Form';
 import Skill from '../components/Skill';
 import { useLocation } from 'react-router-dom';
-import Qualifications from '../components/Qualifications';
+
 import Certificate from '../components/Certificate';
+import Journey from '../components/Journey';
 const Home = () => {
   const location = useLocation();
   const [isHomeClicked, setIsHomeClicked] = useState(false);
@@ -71,7 +72,7 @@ const Home = () => {
       />
       </section>
       <section id="skills"><Skill isSkillClicked={isSkillClicked} /></section>
-      <section id="qualifications"><Qualifications /></section>
+      <section id="journey"><Journey /></section>
       <section id="certificates"> <Certificate isCertificateClicked = {isCertificateClicked}/> </section>
       <section id="project"> <Work isProjectClicked={isProjectClicked} /> </section>
       <section id="contact"><Form /></section>

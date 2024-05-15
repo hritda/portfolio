@@ -5,7 +5,7 @@ import './WorkCardStyles.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { certData } from './CertData';
-import { NavLink } from 'react-router-dom';
+
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -25,7 +25,7 @@ const responsive = {
     }
 };
 const Certificate = (props) => {
-    const logotest = '';
+ 
     return (
         <div className="work-container">
             <h1 className="cert-heading">Certificates</h1>
@@ -62,7 +62,7 @@ const Certificate = (props) => {
                     {certData.map((val, ind) => {
 
                         return (
-                            <div className="cert-card">
+                            <div key={ind} className="cert-card">
                                 <div>
                                     {val.logo}
                                 </div>

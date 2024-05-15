@@ -18,7 +18,7 @@ const Skill = (props) => {
     const handleAnimationEnd = (event)=>{
         const icon = event.target; 
         // Remove from the skill icon itself
-        console.log("handleAnimation called");
+        // console.log("handleAnimation called");
         [...icon.classList].forEach((className) => {
           if (className.startsWith('auto-')) {
             icon.classList.remove(className);
@@ -33,7 +33,7 @@ const Skill = (props) => {
             }
           });
         });
-        console.log(icon.nextSiblingElement);
+        // console.log(icon.nextSiblingElement);
         const h4Element = icon.parentElement.getElementsByTagName('h4')[0];
         if(h4Element){
          Array.from(h4Element.classList).forEach((className)=>{
@@ -50,7 +50,7 @@ const Skill = (props) => {
     skillIcons.forEach((icon) => {
         icon.addEventListener('animationend', handleAnimationEnd);
       });
-    console.log(skillIcons);
+    // console.log(skillIcons);
    
       
         const numIcons = skillIcons.length;
@@ -90,7 +90,7 @@ const Skill = (props) => {
             }
             // Add animation class to the current icon
             skillIcons[currentIndex].classList.add(className);
-            console.log(skillIcons[currentIndex]);
+       
             skillIcons[currentIndex].children[0].classList.add(childClassName);
             skillIcons[currentIndex].parentElement.getElementsByTagName('h4')[0].classList.add(childClassName);
 

@@ -1,0 +1,21 @@
+.time-card{
+    background: #1a1919;
+    margin:1rem 5rem;
+    padding: 1rem;
+    width:250px;
+    height:250px;
+}
+
+.time-body{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    text-align: left;
+    color:white;
+}
+
+.card-text{
+    font-size: 1rem;
+}
+
