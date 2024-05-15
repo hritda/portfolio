@@ -85,7 +85,7 @@ h1 {
 
 @media screen and (min-width: 728px) {
   .timeline {
-    display: block;
+  display: block;
   }
   .timeline ul {
     flex-direction: row;
@@ -99,6 +99,7 @@ h1 {
   .timeCard {
     transform: translateY(-10px);
     opacity: 0;
+    max-width: 150px;
     /* padding: 0 20px; */
     transition: 1.5s ease;
   }
@@ -135,5 +136,23 @@ h1 {
 
     transition: 1s linear;
     border-radius: 999px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .timeline{margin-top: 35px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 10% auto;
+  justify-content: center;
+  }
+  .timeline-innerline{
+    height: 100%;
+    width: 4px;
+    left: 75px;
+  }
+  .timeline-point{
+    left: 69px;
   }
 }
