@@ -37,7 +37,10 @@ h1 {
 .timeCard {
   padding: 0 20px;
   transition: 1.5s;
-  opacity:0;
+  opacity: 0;
+  background: #1a1919;
+  width:250px;
+  height:250px;
 }
 
 .date {
@@ -83,9 +86,49 @@ h1 {
   transition: 1s linear;
 }
 
+@media screen and (min-width: 300px) {
+  .timeline {
+    margin-top: 35px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    justify-content: center;
+  }
+  .timeline-innerline {
+    position: absolute;
+    background: #e60073;
+    width: 4px;
+    height: 0%;
+
+    top: 0%;
+    left: 0%;
+
+    transition: 1s linear;
+  }
+  .timeline-point {
+    border: none;
+    position: absolute;
+
+    border-radius: 50%;
+    background: white;
+    width: 8px;
+    height: 8px;
+
+    top: 30px;
+    left: -6px;
+    transition: 1.5s ease;
+  }
+  .timeline-line {
+    background: rgb(255, 255, 255);
+    width: 4px;
+    border-radius: 12px;
+    position: relative;
+    justify-self: end;
+  }
+}
 @media screen and (min-width: 728px) {
   .timeline {
-  display: block;
+    display: block;
   }
   .timeline ul {
     flex-direction: row;
@@ -136,23 +179,5 @@ h1 {
 
     transition: 1s linear;
     border-radius: 999px;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .timeline{margin-top: 35px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 10% auto;
-  justify-content: center;
-  }
-  .timeline-innerline{
-    height: 100%;
-    width: 4px;
-    left: 75px;
-  }
-  .timeline-point{
-    left: 69px;
   }
 }

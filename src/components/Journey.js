@@ -125,7 +125,7 @@ const Journey = () => {
           <li>
             <span className="timeline-point"></span>
             <span className="date">2017</span>
-            <div className="timeCard"><TimeCard title='HSC 12th' description='Studied from PACE Junior Science College (Dadar)' />
+            <div className="timeCard"><TimeCard  title='HSC 12th' description='Studied from PACE Junior Science College (Dadar)' />
             </div>
           </li>
           <li>

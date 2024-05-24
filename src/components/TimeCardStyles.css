@@ -1,18 +1,14 @@
-.time-card{
-    background: #1a1919;
-    margin:1rem 5rem;
-    padding: 1rem;
-    width:250px;
-    height:250px;
-}
 
-.time-body{
+
+.card{
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: start;
     text-align: left;
-    color:white;
+    background-color:#1a1919;
+    color: white;
+    border-color: #1a1919;
 }
 
 .card-text{
