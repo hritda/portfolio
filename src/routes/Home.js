@@ -13,6 +13,7 @@ import Certificate from '../components/Certificate';
 import Journey from '../components/Journey';
 const Home = () => {
   const location = useLocation();
+
   const [isHomeClicked, setIsHomeClicked] = useState(false);
   const [isProjectClicked, setIsProjectClicked] = useState(false);
   const [isSkillClicked, setIsSkillClicked] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   // const [activeSection, setActiveSection] = useState("");
   useEffect(() => {
+  
     const handleSmoothScroll = () => {
       const targetId = location.hash;
       if (targetId) {
@@ -59,12 +61,14 @@ const Home = () => {
     };
   
     handleSmoothScroll();
-    
+  
   }, [location]);
   return (
-    <div>
 
+    <div>
+      
       <section id="home"><Navbar />
+     
       <Heroimg2
         heading="Welcome!"
         text="I develop wonders of the software world"

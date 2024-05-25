@@ -43,9 +43,15 @@
 .iconcontact{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 1rem;
 
+}
+.confetti{
+  display:flex;
+  width:70%;
+  justify-content: space-between;
+  margin: 0 5rem 0 5rem ;
 }
 .leetcode{
   margin:0 1rem;
