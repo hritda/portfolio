@@ -29,9 +29,9 @@ const HeroImg2 = (props) => {
 
         <p>{props.text}</p>
         <div className="iconcontact">
-          <SiLeetcode className="leetcode" size={25} />
-          <SiCodingninjas className = "codingNinjas" size={25} />
-          <FaGithub className="github" size={25} />
+        <a href="https://leetcode.com/u/HrithikMistry/" target="_blank" > <SiLeetcode className="leetcode" size={25} /></a>
+        <a href="https://www.naukri.com/code360/profile/31cceb17-9fe2-45b1-aed4-8028088311e6" target="_blank"> <SiCodingninjas className = "codingNinjas" size={25} /></a>
+        <a href="https://github.com/hritda/" target="_blank"> <FaGithub className="github" size={25} /></a>
         </div>
       </div>
     </div>

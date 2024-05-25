@@ -35,6 +35,9 @@ const Navbar = (props) => {
                     <Link onClick={handleClick} to="/#skills">Skills</Link>
                 </li>
                 <li  className="item">
+                    <Link onClick={handleClick} to="/#journey">Journey</Link>
+                </li>
+                <li  className="item">
                     <Link onClick={handleClick} to="/#certificates">Certificates</Link>
                 </li>
                 <li  className="item">

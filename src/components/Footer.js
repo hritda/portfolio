@@ -27,8 +27,8 @@ const Footer = () => {
             in software development.
           </p>
           <div className="social">
-           <div > <a id="github"> < FaGithub size={25}  /></a></div>
-            <div ><a id="linkedin">< FaLinkedin size={25} /></a></div>
+           <div > <a href = "https://github.com/hritda/"   target="_blank" id="github"> < FaGithub size={25}  /></a></div>
+            <div ><a href = "https://www.linkedin.com/in/hrithik-m-8a469b215/"  target="_blank" id="linkedin">< FaLinkedin size={25} /></a></div>
           </div>
         </div>
       </div>
