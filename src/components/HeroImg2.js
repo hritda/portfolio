@@ -12,8 +12,8 @@ const HeroImg2 = (props) => {
     <div className="hero-img">
       <div className="heading">
         <div className="confetti">
-          {isExploding && <ConfettiExplosion force={1} particleCount={400} duration={3000}  height="120vh" width="1800" />}
-          {isExploding && <ConfettiExplosion force={1} particleCount={400} duration={3000}  height="120vh" width="1800" />}
+          {isExploding && <ConfettiExplosion force={1} particleCount={400} duration={3000} onComplete={()=>setIsExploding(false)} height="120vh" width="1800" />}
+          {isExploding && <ConfettiExplosion force={1} particleCount={400} duration={3000}  onComplete={()=>setIsExploding(false)} height="120vh" width="1800" />}
         </div>
         <TypeAnimation
 
