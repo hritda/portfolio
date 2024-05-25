@@ -86,7 +86,7 @@ h1 {
   transition: 1s linear;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 350px) {
   .timeline {
     margin-top: 35px;
     padding: 15px;
@@ -94,11 +94,22 @@ h1 {
     grid-template-columns: 40% auto;
     justify-content: center;
   }
+  .timeline ul{
+    margin-top: 30px;
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
   .timeline-innerline {
     position: absolute;
     background: #e60073;
     width: 4px;
     height: 0%;
+   
 
     top: 0%;
     left: 0%;
@@ -122,6 +133,7 @@ h1 {
     background: rgb(255, 255, 255);
     width: 4px;
     border-radius: 12px;
+    right: 37px;
     position: relative;
     justify-self: end;
   }
