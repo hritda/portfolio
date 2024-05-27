@@ -5,11 +5,13 @@ import { NavLink } from 'react-router-dom';
 const WorkCard = (props) => {
     return (
         <div className="project-card">
-            <h2 className="project-title">
-                {props.title}
-            </h2>
+            <div className="project-title">
+               {props.title}
+            </div>
+            
             <div className="pro-details">
-                <p>{props.text}</p>
+            <div className="pro-text"> <p>{props.text}</p></div>
+               
                 <ul>
                     {props.ul.map((val, ind)=>{
                         return <li key={ind}>{val}</li>
@@ -18,8 +20,7 @@ const WorkCard = (props) => {
                 
             </div>
             <div className="pro-btns">
-                    <NavLink to="" className="btn">View</NavLink>
-                    <NavLink to="" className="btn">Source</NavLink>
+                    <NavLink target = "_blank" to={props.href} className="btn">Source</NavLink>
                 </div>
         </div>
     )

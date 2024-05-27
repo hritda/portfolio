@@ -75,7 +75,7 @@ const Certificate = (props) => {
                                     </div>
                                     <div className='cert-number'> Certificate No:{" "} {val.number}</div>
                                     <div className="cert-btns">
-                                        <button to="" className="btn btn-cert">View</button>
+                                      <a target="_blank" href={val.href}> <button to="" className="btn btn-cert">View</button></a>
                                     </div>
                                 </div>
                             </div>

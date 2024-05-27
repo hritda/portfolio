@@ -62,10 +62,11 @@
   padding: 2rem 2rem;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 900px) {
   .cert-container {
     max-width: 90%;
     margin: auto;
-    grid-template-columns: 1fr;
+    height:80%;
   }
+
 }

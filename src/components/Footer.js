@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left">
           <div className="location">
-            < FaHome size={20} style={{ color: "white", marginRight: "2rem" }} />
+            {/* < FaHome size={20} style={{ color: "white", marginRight: "2rem" }} />
             <div>
               <p>1503, Shree Krishna Apartments, Tulsiwadi</p>
               <p>Tardeo, Mumbai-400034</p>
-            </div>
+            </div> */}
           </div>
           <div className="phone">
             <h4>< FaPhone size={20} style={{ color: "white", marginRight: "2rem" }} />+91-7021725996</h4>
