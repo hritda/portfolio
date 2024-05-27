@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { IoIosWarning } from "react-icons/io";
 import React from 'react';
 import { MdEmail } from "react-icons/md";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm({
