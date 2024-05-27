@@ -25,7 +25,13 @@ const Form = () => {
             showConfirmButton: false,
             timer: 1500
           });
-          emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
+          emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F').then((result)=>{
+            console.log("sent successfully");
+          },
+          (error)=>{
+            console.log(error);
+          }
+        )
           console.log(result);
       }, (error) => {
           console.log(error.text);
