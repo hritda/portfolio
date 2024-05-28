@@ -20,7 +20,7 @@ const WorkCard = (props) => {
                 
             </div>
             <div className="pro-btns">
-                    <NavLink target = "_blank" to={props.href} className="btn">Source</NavLink>
+                    <NavLink target = "_blank" to={props.href} className="btn" value="Source">Source</NavLink>
                 </div>
         </div>
     )

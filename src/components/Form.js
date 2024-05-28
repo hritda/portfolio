@@ -11,11 +11,12 @@ const Form = () => {
         criteriaMode: "all"
     });
     const onSubmit = (data, e) => {
-        console.log(data);
+        console.log("this is the form data:",data);
+        console.log(e.target);
         e.preventDefault();
-        emailjs.sendForm('portfolio_service2000', 'contact_form', e.target, 'j57d8r_osKEALso-F')
+        emailjs.sendForm('portfolio_service2000', 'contact_form',e.target, 'j57d8r_osKEALso-F')
       .then((result) => {
-        Swal.fire({
+         Swal.fire({
             icon: "success",
             title: "Yay!",
             color:"white",
@@ -25,13 +26,7 @@ const Form = () => {
             showConfirmButton: false,
             timer: 1500
           });
-          emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F').then((result)=>{
-            console.log("sent successfully");
-          },
-          (error)=>{
-            console.log(error);
-          }
-        )
+        //    await emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
           console.log(result);
       }, (error) => {
           console.log(error.text);
@@ -54,7 +49,7 @@ const Form = () => {
                 <label htmlFor="subject">Subject</label>
                 <input placeholder="Enter the subject to contact for..." {...register("subject")} id="subject" type="text"></input>
                 <label htmlFor="message">Message</label>
-                <textarea placeholder="Enter some more information..." {...register("message", { required: "message is required" })} id="message" rows="6" placeholder="Type your message here..." />
+                <textarea placeholder="Enter some more information..." {...register("message", { required: "message is required" })} id="message" rows="6"  />
                 {errors.messsage?.type === 'required' && <p><IoIosWarning size={20} color="e60073" /> &nbsp;&nbsp; A message is required</p>}
                 <input className="btn" type="submit" value="Submit" />
 
