@@ -24,10 +24,11 @@ const Form = () => {
             text:"Your info is submitted!",
             iconColor: "#42f563",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1800
           });
-        //    await emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
+          await emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
           console.log(result);
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
       });
