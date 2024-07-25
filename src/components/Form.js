@@ -26,7 +26,7 @@ const Form = () => {
             showConfirmButton: false,
             timer: 1800
           });
-          await emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
+          emailjs.sendForm('portfolio_service2000', 'contact_reply', e.target, 'j57d8r_osKEALso-F')
           console.log(result);
           e.target.reset();
       }, (error) => {
